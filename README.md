@@ -15,7 +15,17 @@ Este repositório contém os artefatos referentes à entrega parcial da atividad
 - **Camada de persistência:** classes Java mapeadas em tabelas utilizando ORMLite e SQLite, conforme os diagramas de classes e entidade-relacionamento já entregues anteriormente.
 - **Notebooks Jupyter:** testes interativos da camada de persistência, avaliando o funcionamento das operações CRUD e demonstrando a serialização dos dados.
 
-Os artefatos anteriores (diagrama de classes e diagrama E-R) foram entregues separadamente.
+Os artefatos anteriores (diagrama de classes e diagrama E-R) foram entregues separadamente. 
+
+**Aviso ao professor:** Estou no grupo  com os integrantes:
+
+- Nicole - 202302625
+- Victor Gabriel - 202302631
+- Matheus Augusto - 202305532
+- Marcello Ronald - 202302618
+- Kelvin de Oliveira - 202105042
+
+Os quais fizeram entrega parcial dos outros dois artefatos ainda no dia 09/09/20264
 
 ---
 
