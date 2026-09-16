@@ -37,12 +37,28 @@ public class MecanicoRepository {
         }
     }
 
+    public void update(Mecanico mecanico) {
+        try {
+            dao.update(mecanico);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
     public List<Mecanico> findAll() {
         try {
             return dao.queryForAll();
         } catch (SQLException e) {
             System.out.println(e);
             return null;
+        }
+    }
+
+    public void delete(Mecanico mecanico) {
+        try {
+            dao.delete(mecanico);
+        } catch (SQLException e) {
+            System.out.println(e);
         }
     }
 }

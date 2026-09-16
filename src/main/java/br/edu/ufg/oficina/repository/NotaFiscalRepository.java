@@ -45,4 +45,20 @@ public class NotaFiscalRepository {
             return null;
         }
     }
+
+    public void update(NotaFiscal nota) {
+        try {
+            dao.update(nota);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void delete(NotaFiscal nota) {
+        try {
+            dao.delete(nota);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
 }

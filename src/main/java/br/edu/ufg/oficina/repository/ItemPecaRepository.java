@@ -36,4 +36,20 @@ public class ItemPecaRepository {
             return null;
         }
     }
+
+    public void update(ItemPeca item) {
+        try {
+            dao.update(item);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void delete(ItemPeca item) {
+        try {
+            dao.delete(item);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
 }

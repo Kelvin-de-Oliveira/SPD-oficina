@@ -1,6 +1,7 @@
 package br.edu.ufg.oficina.repository;
 
 import br.edu.ufg.oficina.domain.Peca;
+import br.edu.ufg.oficina.domain.Servico;
 import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.table.TableUtils;
@@ -37,12 +38,28 @@ public class PecaRepository {
         }
     }
 
+    public void update(Peca peca) {
+        try {
+            dao.update(peca);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
     public List<Peca> findAll() {
         try {
             return dao.queryForAll();
         } catch (SQLException e) {
             System.out.println(e);
             return null;
+        }
+    }
+
+    public void delete(Peca peca) {
+        try {
+            dao.delete(peca);
+        } catch (SQLException e) {
+            System.out.println(e);
         }
     }
 }

@@ -37,12 +37,28 @@ public class ServicoRepository {
         }
     }
 
+    public void update(Servico servico) {
+        try {
+            dao.update(servico);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
     public List<Servico> findAll() {
         try {
             return dao.queryForAll();
         } catch (SQLException e) {
             System.out.println(e);
             return null;
+        }
+    }
+
+    public void delete(Servico servico) {
+        try {
+            dao.delete(servico);
+        } catch (SQLException e) {
+            System.out.println(e);
         }
     }
 }

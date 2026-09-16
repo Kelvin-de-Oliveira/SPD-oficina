@@ -36,4 +36,20 @@ public class OrdemMecanicoRepository {
             return null;
         }
     }
+
+    public void update(OrdemMecanico ordemMecanico) {
+        try {
+            dao.update(ordemMecanico);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void delete(OrdemMecanico ordemMecanico) {
+        try {
+            dao.delete(ordemMecanico);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
 }

@@ -36,4 +36,19 @@ public class ItemServicoRepository {
             return null;
         }
     }
+    public void update(ItemServico itemServico) {
+        try {
+            dao.update(itemServico);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
+
+    public void delete(ItemServico item) {
+        try {
+            dao.delete(item);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
 }
